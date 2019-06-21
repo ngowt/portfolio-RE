@@ -1,0 +1,13 @@
+.section-about {
+  height: 50vh;
+  margin-top: -8rem;
+  position: relative;
+  background-image: linear-gradient(
+    to left,
+    rgba($color-secondary-light, 0.8),
+    rgba($color-secondary-dark, 0.8)
+  );
+  @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+    clip-path: polygon(0 25%, 50% 25%, 65% 0, 85% 0, 100% 25%, 100% 100%, 0 100%);
+  }
+}
