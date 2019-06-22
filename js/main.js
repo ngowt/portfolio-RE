@@ -1,3 +1,5 @@
+let currentRole = 0;
+
 const changeJob = () => {
   const roles = [
     "frontend",
@@ -6,8 +8,12 @@ const changeJob = () => {
     "ui/ux",
     "game development"
   ];
-  const selectedRole = roles[Math.floor(Math.random() * roles.length)];
-  return selectedRole;
+  const randIndex = Math.floor(Math.random() * roles.length);
+  if (randIndex === currentRole) {
+    return changeJob();
+  }
+  currentRole = randIndex;
+  return roles[randIndex];
 };
 
 setTimeout(
