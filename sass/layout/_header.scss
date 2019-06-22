@@ -5,7 +5,10 @@
     to right,
     rgba($color-primary-light, 0.8),
     rgba($color-primary-dark, 0.8)
-  );
+    ),
+    url(../img/background-2.jpg);
+    background-size: cover;
+    background-position: top;
 
   @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 85% 75%, 65% 75%, 50% 100%, 0 100%);
