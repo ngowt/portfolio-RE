@@ -1,6 +1,6 @@
 .header {
   position: relative;
-  height: 50vh;
+  height: 95vh;
   background-image: linear-gradient(
     to right,
     rgba($color-primary-light, 0.8),
@@ -9,5 +9,24 @@
 
   @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 85% 75%, 65% 75%, 50% 100%, 0 100%);
+  }
+
+  &__text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+}
+
+.heading-primary {
+  &--main {
+    display: block;
+  }
+
+  &--sub {
+    display: block;
+    animation: fadeInAndOut 5s infinite;
   }
 }
