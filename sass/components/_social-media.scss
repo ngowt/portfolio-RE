@@ -10,7 +10,7 @@
     border: none;
     transition: all 0.4s;
     cursor: pointer;
-    animation: moveInBottom 1s;
+    animation: moveInBottom 1s backwards, fadeIn 3s backwards;
     background-color: rgba($color-tertiary-light, 0.6);
 
     &:active,
