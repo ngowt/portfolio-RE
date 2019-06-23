@@ -1,0 +1,54 @@
+.social-media {
+  &__btn {
+    position: relative;
+    display: block;
+    height: 2rem;
+    width: 2rem;
+    margin: 1rem;
+    border-radius: 50%;
+    overflow: hidden;
+    border: none;
+    transition: all 0.4s;
+    cursor: pointer;
+    animation: moveInBottom 1s;
+    background-color: rgba($color-tertiary-light, 0.6);
+
+    &:active,
+    &:focus {
+      outline: none;
+    }
+
+    &:hover {
+      transform: scale(1.1);
+      box-shadow: 0rem .5rem 1rem rgba($color-tertiary-dark, 1);
+    }
+
+    &-1 {
+        animation-delay: .089s;
+    }
+
+    &-2 {
+        animation-delay: .089s * 2;
+    }
+
+    &-3 {
+        animation-delay: .089s * 3;
+    }
+
+    &-4 {
+        animation-delay: .089s * 4;
+    }
+
+    &-5 {
+        animation-delay: .089s * 4 + .18s;
+    }
+
+    &-6 {
+        animation-delay: .089s * 4 + 2 * .18s;
+    }
+  }
+
+  &__logo {
+    width: 100%;
+  }
+}
