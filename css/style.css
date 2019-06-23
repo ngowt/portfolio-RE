@@ -1,3 +1,9 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
 @keyframes moveInBottom {
   0% {
     transform: translateY(-100vh); }
@@ -65,7 +71,7 @@ body {
   border: none;
   transition: all 0.4s;
   cursor: pointer;
-  animation: moveInBottom 1s;
+  animation: moveInBottom 1s backwards, fadeIn 3s backwards;
   background-color: rgba(241, 237, 246, 0.6); }
   .social-media__btn:active, .social-media__btn:focus {
     outline: none; }
