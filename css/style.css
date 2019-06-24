@@ -1,7 +1,13 @@
+@keyframes glowAura {
+  from {
+    box-shadow: 0 0 0.5rem 0.1rem rgba(241, 237, 246, 0.5); }
+  to {
+    box-shadow: 0 0 1rem 0.9rem rgba(241, 237, 246, 0.9); } }
+
 @keyframes fadeIn {
-  0% {
+  from {
     opacity: 0; }
-  100% {
+  to {
     opacity: 1; } }
 
 @keyframes moveInBottom {
@@ -35,7 +41,7 @@ body {
       padding: 0; } }
 
 body {
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   color: #efe9f4;
   font-weight: 400; }
 
@@ -54,6 +60,12 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   display: inline-block; }
+
+.project__heading {
+  font-size: 2rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #efe9f4; }
 
 .u-center-text {
   text-align: center !important; }
@@ -105,8 +117,9 @@ body {
   border: none;
   transition: all 0.4s;
   cursor: pointer;
-  animation: moveInBottom 1s backwards, fadeIn 3s backwards;
   background-color: rgba(241, 237, 246, 0.6); }
+  .social-media__btn-animated {
+    animation: moveInBottom 1s backwards, fadeIn 3s backwards; }
   .social-media__btn:active, .social-media__btn:focus {
     outline: none; }
   .social-media__btn:hover {
@@ -129,8 +142,54 @@ body {
   width: 50%; }
 
 .project {
-  height: 30rem;
-  background-color: orangered; }
+  background-image: linear-gradient(to right bottom, #696D87, #3B405A);
+  position: relative;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 0.5rem 0.1rem rgba(241, 237, 246, 0.5);
+  transition: transform 0.5s; }
+  .project:hover {
+    animation: glowAura 2s ease-in-out infinite alternate;
+    transform: scale(1.2); }
+  .project__picture {
+    background-size: cover;
+    height: 23rem;
+    background-position: top;
+    transition: all 0.5s;
+    border-radius: 1rem; }
+    .project__picture-1 {
+      background-image: url("https://i.gyazo.com/2ae51d775a298600aea8c2cbadf85104.gif"); }
+    .project__picture-2 {
+      background-image: url("https://i.gyazo.com/b8b0eaa14c811610eef2a287a340b0ba.gif"); }
+    .project__picture-3 {
+      background-image: url("https://i.imgur.com/s4Y0tkD.jpg"); }
+    .project__picture-4 {
+      background-image: url("https://i.imgur.com/MNoWLCR.jpg"); }
+    .project__picture-5 {
+      background-image: url("https://i.gyazo.com/a311d8d176256c0ba2eee7ea6b082fbc.gif"); }
+    .project__picture-6 {
+      background-image: url("https://i.imgur.com/blGsfzs.jpg"); }
+    .project__picture-7 {
+      background-image: url("https://camo.githubusercontent.com/2a21fb02c17a433222960deb8477632faf9576ea/68747470733a2f2f6779617a6f2e636f6d2f64356232636632396138663066316136313632666465613937323039616234642e676966"); }
+    .project__picture-8 {
+      background-image: url("https://i.imgur.com/NJYLAI6.jpg"); }
+  .project__heading {
+    position: absolute;
+    top: 20rem;
+    right: 2rem; }
+    .project__heading-span {
+      background-image: linear-gradient(to right, rgba(151, 123, 140, 0.95), rgba(105, 77, 95, 0.95));
+      padding: 0.5rem 0.8rem; }
+  .project__actions {
+    text-align: right; }
+    .project__actions-btn {
+      background-color: #FFF;
+      display: inline;
+      margin: 1rem 0.3rem 0 0.3rem; }
+      .project__actions-btn:last-child {
+        margin-right: 0; }
+    .project__actions__logo {
+      width: 100%; }
 
 .header {
   position: relative;
@@ -199,5 +258,5 @@ body {
   transform: translateY(-50%); }
 
 .section-projects {
-  position: relative;
-  background-image: linear-gradient(to left, rgba(105, 109, 135, 0.8), rgba(59, 64, 90, 0.8)); }
+  background-image: linear-gradient(to left, rgba(105, 109, 135, 0.8), rgba(59, 64, 90, 0.8));
+  padding: 5rem 10rem; }
