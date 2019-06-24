@@ -1,4 +1,87 @@
 .project {
-    height: 30rem;
-    background-color: orangered;
+  background-image: linear-gradient(
+    to right bottom,
+    $color-secondary-light,
+    $color-secondary-dark
+  );
+  position: relative;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 .5rem 0.1rem rgba($color-tertiary-light, 0.5);
+  transition: transform 0.5s;
+
+  &:hover {
+    animation: glowAura 2s ease-in-out infinite alternate;
+    transform: scale(1.2);
+  }
+
+  &__picture {
+    background-size: cover;
+    height: 23rem;
+    background-position: top;
+    transition: all 0.5s;
+    border-radius: 1rem;
+    &-1 {
+      background-image: url("https://i.gyazo.com/2ae51d775a298600aea8c2cbadf85104.gif");
+    }
+
+    &-2 {
+      background-image: url("https://i.gyazo.com/b8b0eaa14c811610eef2a287a340b0ba.gif");
+    }
+    
+    &-3 {
+      background-image: url("https://i.imgur.com/s4Y0tkD.jpg");
+    }
+
+    &-4 {
+      background-image: url("https://i.imgur.com/MNoWLCR.jpg");
+    }
+
+    &-5 {
+      background-image: url("https://i.gyazo.com/a311d8d176256c0ba2eee7ea6b082fbc.gif");
+    }
+
+    &-6 {
+      background-image: url("https://i.imgur.com/blGsfzs.jpg");
+    }
+
+    &-7 {
+      background-image: url("https://camo.githubusercontent.com/2a21fb02c17a433222960deb8477632faf9576ea/68747470733a2f2f6779617a6f2e636f6d2f64356232636632396138663066316136313632666465613937323039616234642e676966");
+    }
+
+    &-8 {
+      background-image: url("https://i.imgur.com/NJYLAI6.jpg");
+    }
+  }
+
+  &__heading {
+    position: absolute;
+    top: 20rem;
+    right: 2rem;
+
+    &-span {
+      background-image: linear-gradient(
+        to right,
+        rgba($color-primary-light, 0.95),
+        rgba($color-primary-dark, 0.95)
+      );
+      padding: 0.5rem 0.8rem;
+    }
+  }
+
+  &__actions {
+    text-align: right;
+    &-btn {
+      background-color: $color-white;
+      display: inline;
+      margin: 1rem 0.3rem 0 0.3rem;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    &__logo {
+      width: 100%;
+    }
+  }
 }
