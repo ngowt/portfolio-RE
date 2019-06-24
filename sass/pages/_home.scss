@@ -8,10 +8,13 @@
 
 .section-projects {
   background-image: linear-gradient(
-    to left,
-    rgba($color-secondary-light, 0.8),
-    rgba($color-secondary-dark, 0.8)
-  );
+      to left,
+      rgba($color-secondary-light, 0.8),
+      rgba($color-secondary-dark, 0.8)
+    ),
+    url(../img/background-3.jpg);
+  background-size: cover;
+  background-position: top;
   padding: 5rem 10rem;
 
   // @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
