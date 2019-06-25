@@ -1,0 +1,25 @@
+.about {
+  padding: 1rem;
+
+  &__picture {
+    width: 100%;
+    border-radius: 50%;
+  }
+
+  &__skills {
+    &-icon {
+      display: inline-block;
+      height: 3rem;
+      width: 3rem;
+      margin: 1rem;
+      transition: all .2s; 
+      &:first-child {
+          margin-left: 0;
+      }
+
+      &:hover {
+          transform: scale(1.3);
+      }
+    }
+  }
+}
