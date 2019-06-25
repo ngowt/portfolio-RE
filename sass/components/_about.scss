@@ -2,8 +2,10 @@
   padding: 1rem;
 
   &__picture {
-    width: 100%;
-    border-radius: 50%;
+    background-image: url("https://image.shutterstock.com/z/stock-photo-half-turned-side-profile-close-up-view-portrait-of-handsome-virile-masculine-attractive-confident-790169857.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 20rem;
   }
 
   &__skills {
@@ -12,13 +14,13 @@
       height: 3rem;
       width: 3rem;
       margin: 1rem;
-      transition: all .2s; 
+      transition: all 0.2s;
       &:first-child {
-          margin-left: 0;
+        margin-left: 0;
       }
 
       &:hover {
-          transform: scale(1.3);
+        transform: scale(1.3);
       }
     }
   }
