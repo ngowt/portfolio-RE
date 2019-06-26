@@ -141,7 +141,7 @@ body {
     transform: translate(-150%, -50%);
     height: 20rem;
     width: 20rem;
-    background-image: url("https://image.shutterstock.com/z/stock-photo-half-turned-side-profile-close-up-view-portrait-of-handsome-virile-masculine-attractive-confident-790169857.jpg");
+    background-image: url("../img/me.jpg");
     background-size: cover;
     background-position: center;
     border-radius: 50%; }
@@ -203,19 +203,18 @@ body {
   padding: 1rem;
   border-radius: 1rem;
   box-shadow: 0 0 0.5rem 0.1rem rgba(241, 237, 246, 0.5);
-  transition: transform 0.5s; }
+  transition: transform 0.5s, filter 1.5s ease-out;
+  filter: brightness(60%) saturate(0); }
   .project:hover {
     animation: glowAura 2s ease-in-out infinite alternate;
-    transform: scale(1.2); }
+    transform: scale(1.2);
+    filter: brightness(100%) saturate(1); }
   .project__picture {
     background-size: cover;
     height: 23rem;
     background-position: top;
     transition: all 1s;
-    border-radius: 1rem;
-    filter: brightness(60%) saturate(0); }
-    .project__picture:hover {
-      filter: brightness(100%) saturate(1); }
+    border-radius: 1rem; }
     .project__picture-1 {
       background-image: url("https://i.gyazo.com/2ae51d775a298600aea8c2cbadf85104.gif"); }
     .project__picture-2 {
