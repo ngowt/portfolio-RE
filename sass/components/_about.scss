@@ -1,11 +1,36 @@
 .about {
   padding: 1rem;
 
+  &__background {
+    position: absolute;
+    height: 50rem;
+    width: 50rem;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url("../img/programmer.png");
+    background-size: cover; 
+  }
+
   &__picture {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-150%, -50%);
+    height: 20rem;
+    width: 20rem;
     background-image: url("https://image.shutterstock.com/z/stock-photo-half-turned-side-profile-close-up-view-portrait-of-handsome-virile-masculine-attractive-confident-790169857.jpg");
     background-size: cover;
     background-position: center;
-    height: 20rem;
+    border-radius: 50%;
+  }
+
+  &__details {
+    position: absolute;
+    padding: 3rem;
+    width: 40%;
+    top: 0;
+    right: 0;
   }
 
   &__skills {
