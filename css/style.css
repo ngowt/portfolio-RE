@@ -151,7 +151,7 @@ body {
     display: inline-block;
     height: 3rem;
     width: 3rem;
-    margin: 1rem;
+    margin: 0 1rem 1rem 1rem;
     transition: all 0.2s; }
     .about__skills-icon:first-child {
       margin-left: 0; }
@@ -207,8 +207,11 @@ body {
     background-size: cover;
     height: 23rem;
     background-position: top;
-    transition: all 0.5s;
-    border-radius: 1rem; }
+    transition: all 1s;
+    border-radius: 1rem;
+    filter: brightness(60%) saturate(0); }
+    .project__picture:hover {
+      filter: brightness(100%) saturate(1); }
     .project__picture-1 {
       background-image: url("https://i.gyazo.com/2ae51d775a298600aea8c2cbadf85104.gif"); }
     .project__picture-2 {
