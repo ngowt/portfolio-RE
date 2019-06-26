@@ -1,0 +1,22 @@
+.navigation {
+  top: 3rem;
+  right: 1rem;
+  position: fixed;
+  z-index: $priority-h;
+  &__list {
+    text-align: left;
+  }
+
+  &__item {
+    &-span {
+      border-bottom: 0.1rem solid rgba($color-primary, 0.9);
+    }
+    padding: 0.5rem 0rem 0.5rem 1rem;
+    list-style: none;
+    transition: all 0.5s;
+    color: $color-secondary;
+    &:hover {
+      transform: translateX(-0.2rem);
+    }
+  }
+}
