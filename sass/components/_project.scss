@@ -8,11 +8,13 @@
   padding: 1rem;
   border-radius: 1rem;
   box-shadow: 0 0 .5rem 0.1rem rgba($color-tertiary-light, 0.5);
-  transition: transform 0.5s;
+  transition: transform 0.5s, filter 1.5s ease-out;
+  filter: brightness(60%) saturate(0);
 
   &:hover {
     animation: glowAura 2s ease-in-out infinite alternate;
     transform: scale(1.2);
+    filter: brightness(100%) saturate(1);
   }
 
   &__picture {
@@ -21,11 +23,7 @@
     background-position: top;
     transition: all 1s;
     border-radius: 1rem;
-    filter: brightness(60%) saturate(0);
-    &:hover {
-      filter: brightness(100%) saturate(1);
-    }
-
+    
     &-1 {
       background-image: url("https://i.gyazo.com/2ae51d775a298600aea8c2cbadf85104.gif");
     }
@@ -63,7 +61,6 @@
     position: absolute;
     top: 20rem;
     right: 2rem;
-
     &-span {
       background-image: linear-gradient(
         to right,
