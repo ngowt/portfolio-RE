@@ -5,7 +5,8 @@ const changeJob = () => {
     "frontend",
     "backend",
     "fullstack",
-    "ui/ux",
+    "ui design",
+    "software development",
     "game development"
   ];
   const randIndex = Math.floor(Math.random() * roles.length);
