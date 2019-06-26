@@ -20,6 +20,8 @@ body {
 
 .paragraph {
   font-size: $default-font-size;
+  line-height: 1.1;
+  letter-spacing: .5;
   &:not(:last-child) {
     margin-bottom: 3rem;
   }
@@ -39,7 +41,7 @@ body {
 }
 
 .section-about {
-  color: $color-secondary;
+  color: $color-primary-dark;
 }
 
 .project {
