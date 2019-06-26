@@ -56,7 +56,9 @@ body {
   font-weight: 300; }
 
 .paragraph {
-  font-size: 1.6rem; }
+  font-size: 1.6rem;
+  line-height: 1.1;
+  letter-spacing: .5; }
   .paragraph:not(:last-child) {
     margin-bottom: 3rem; }
 
@@ -72,7 +74,7 @@ body {
   font-weight: 700; }
 
 .section-about {
-  color: #484d6d; }
+  color: #694D5F; }
 
 .project__heading {
   font-size: 2rem;
@@ -121,6 +123,8 @@ body {
 
 .about {
   padding: 1rem; }
+  .about-heading {
+    color: #696D87; }
   .about__background {
     position: absolute;
     height: 50rem;
