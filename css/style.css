@@ -121,11 +121,32 @@ body {
 
 .about {
   padding: 1rem; }
+  .about__background {
+    position: absolute;
+    height: 50rem;
+    width: 50rem;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url("../img/programmer.png");
+    background-size: cover; }
   .about__picture {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-150%, -50%);
+    height: 20rem;
+    width: 20rem;
     background-image: url("https://image.shutterstock.com/z/stock-photo-half-turned-side-profile-close-up-view-portrait-of-handsome-virile-masculine-attractive-confident-790169857.jpg");
     background-size: cover;
     background-position: center;
-    height: 20rem; }
+    border-radius: 50%; }
+  .about__details {
+    position: absolute;
+    padding: 3rem;
+    width: 40%;
+    top: 0;
+    right: 0; }
   .about__skills-icon {
     display: inline-block;
     height: 3rem;
@@ -289,7 +310,8 @@ body {
   transform: translateY(-50%); }
 
 .section-about {
-  padding: 5rem 10rem;
+  position: relative;
+  padding: 25rem 5rem;
   background-image: linear-gradient(to left, rgba(241, 237, 246, 0.8), rgba(196, 191, 200, 0.8));
   background-size: cover;
   background-position: top; }
