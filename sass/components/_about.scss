@@ -1,6 +1,10 @@
 .about {
   padding: 1rem;
 
+  &-heading {
+    color: $color-secondary-light;
+  }
+
   &__background {
     position: absolute;
     height: 50rem;
