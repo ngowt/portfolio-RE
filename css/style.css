@@ -169,7 +169,8 @@ body {
 
 .btn, .btn:link, .btn:visited {
   text-decoration: none;
-  color: inherit; }
+  color: inherit;
+  cursor: pointer; }
 
 .social-media__btn {
   position: relative;
