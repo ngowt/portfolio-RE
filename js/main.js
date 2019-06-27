@@ -1,5 +1,4 @@
 let currentRole = 0;
-
 const changeJob = () => {
   const roles = [
     "frontend",
@@ -26,3 +25,7 @@ setTimeout(
     }, 5000),
   100
 );
+
+document.getElementById('btn-home').onclick = () => scrollPageTo("#home", 1000);
+document.getElementById('btn-about').onclick = () => scrollPageTo("#about", 1000);
+document.getElementById('btn-projects').onclick = () => scrollPageTo("#projects", 1000);
