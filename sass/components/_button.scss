@@ -4,4 +4,8 @@
         color: inherit;
         cursor: pointer;
     }
+
+    &-white {
+        background-color: rgba($color-white, .8);
+    }
 }
