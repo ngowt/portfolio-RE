@@ -1,9 +1,9 @@
 @keyframes glowAura {
     from {
-        box-shadow: 0 0 .5rem .1rem rgba($color-tertiary-light, .5); 
+        box-shadow: 0 0 5rem .1rem rgba($color-tertiary-light, .5); 
     }
     to {
-        box-shadow: 0 0 1rem .9rem rgba($color-tertiary-light, .9); 
+        box-shadow: 0 0 5rem .9rem rgba($color-tertiary-light, .9); 
     }
 }
 
