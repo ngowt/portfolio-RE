@@ -13,8 +13,11 @@ $color-tertiary-dark: #C4BFC8;
 
 $color-white: #FFF;
 $color-black: #000;
-
 $color-grey-dark: #444;
+
+$color-text-primary: $color-tertiary;
+$color-text-secondary: $color-primary;
+$color-text-tertiary: $color-secondary;
 
 // Grid
 $grid-width: 114rem;
