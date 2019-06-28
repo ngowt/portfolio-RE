@@ -212,7 +212,7 @@ body {
   position: relative;
   padding: 1rem;
   border-radius: 1rem;
-  box-shadow: 0 0 10rem 0.1rem rgba(241, 237, 246, 0.5);
+  box-shadow: 0 0 5rem 0.1rem rgba(241, 237, 246, 0.5);
   transition: transform 0.5s, filter 1.5s ease-out;
   filter: brightness(60%) saturate(0); }
   .project:hover {
