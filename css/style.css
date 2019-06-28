@@ -1,8 +1,8 @@
 @keyframes glowAura {
   from {
-    box-shadow: 0 0 0.5rem 0.1rem rgba(241, 237, 246, 0.5); }
+    box-shadow: 0 0 5rem 0.1rem rgba(241, 237, 246, 0.5); }
   to {
-    box-shadow: 0 0 1rem 0.9rem rgba(241, 237, 246, 0.9); } }
+    box-shadow: 0 0 5rem 0.9rem rgba(241, 237, 246, 0.9); } }
 
 @keyframes fadeIn {
   from {
@@ -35,7 +35,8 @@
 
 body {
   box-sizing: border-box;
-  padding: 3rem 9rem 3rem 3rem; }
+  padding: 3rem 9rem 3rem 3rem;
+  background-color: #efe9f4; }
   @media only screen and (max-width: 56.25em) {
     body {
       padding: 0; } }
@@ -63,7 +64,7 @@ body {
 .paragraph {
   font-size: 1.6rem;
   line-height: 1.1;
-  letter-spacing: .5; }
+  letter-spacing: 0.5; }
   .paragraph:not(:last-child) {
     margin-bottom: 3rem; }
 
@@ -78,14 +79,10 @@ body {
   text-transform: uppercase;
   font-weight: 700; }
 
-.section-about {
-  color: #694D5F; }
-
 .project__heading {
   font-size: 2rem;
   font-weight: 300;
-  text-transform: uppercase;
-  color: #efe9f4; }
+  text-transform: uppercase; }
 
 .u-center-text {
   text-align: center !important; }
@@ -127,9 +124,10 @@ body {
   margin-bottom: 16rem !important; }
 
 .about {
-  padding: 1rem; }
+  padding: 1rem;
+  color: #805e73; }
   .about-heading {
-    color: #696D87; }
+    color: #484d6d; }
   .about__background {
     position: absolute;
     height: 50rem;
@@ -146,7 +144,7 @@ body {
     transform: translate(-150%, -50%);
     height: 20rem;
     width: 20rem;
-    background-image: url("../img/me.jpg");
+    background-image: url("https://image.shutterstock.com/z/stock-photo-half-turned-side-profile-close-up-view-portrait-of-handsome-virile-masculine-attractive-confident-790169857.jpg");
     background-size: cover;
     background-position: center;
     border-radius: 50%; }
@@ -172,6 +170,9 @@ body {
   color: inherit;
   cursor: pointer; }
 
+.btn-white {
+  background-color: rgba(255, 255, 255, 0.8); }
+
 .social-media__btn {
   position: relative;
   display: block;
@@ -182,8 +183,7 @@ body {
   overflow: hidden;
   border: none;
   transition: all 0.4s;
-  cursor: pointer;
-  background-color: rgba(241, 237, 246, 0.6); }
+  cursor: pointer; }
   .social-media__btn-animated {
     animation: moveInBottom 1s backwards, fadeIn 3s backwards; }
   .social-media__btn:active, .social-media__btn:focus {
@@ -212,7 +212,7 @@ body {
   position: relative;
   padding: 1rem;
   border-radius: 1rem;
-  box-shadow: 0 0 0.5rem 0.1rem rgba(241, 237, 246, 0.5);
+  box-shadow: 0 0 10rem 0.1rem rgba(241, 237, 246, 0.5);
   transition: transform 0.5s, filter 1.5s ease-out;
   filter: brightness(60%) saturate(0); }
   .project:hover {
@@ -251,7 +251,6 @@ body {
   .project__actions {
     text-align: right; }
     .project__actions-btn {
-      background-color: #FFF;
       display: inline;
       margin: 1rem 0.3rem 0 0.3rem; }
       .project__actions-btn:last-child {
@@ -262,9 +261,7 @@ body {
 .header {
   position: relative;
   height: 95vh;
-  background-image: linear-gradient(to right, rgba(151, 123, 140, 0.8), rgba(105, 77, 95, 0.8)), url(../img/background-2.jpg);
-  background-size: cover;
-  background-position: top; }
+  background-image: linear-gradient(to right bottom, #977B8C, #694D5F); }
   .header__text-box {
     position: absolute;
     top: 40%;
@@ -345,12 +342,8 @@ body {
 .section-about {
   position: relative;
   padding: 25rem 5rem;
-  background-image: linear-gradient(to left, rgba(241, 237, 246, 0.8), rgba(196, 191, 200, 0.8));
-  background-size: cover;
-  background-position: top; }
+  background-image: #C4BFC8; }
 
 .section-projects {
   padding: 5rem 10rem;
-  background-image: linear-gradient(to left, rgba(105, 109, 135, 0.8), rgba(59, 64, 90, 0.8)), url(../img/background-3.jpg);
-  background-size: cover;
-  background-position: top; }
+  background-image: linear-gradient(to right bottom, #977B8C, #694D5F); }
