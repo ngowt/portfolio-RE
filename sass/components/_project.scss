@@ -25,11 +25,11 @@
     border-radius: 1rem;
 
     &-1 {
-      background-image: url("https://i.gyazo.com/2ae51d775a298600aea8c2cbadf85104.gif");
+      background-image: url("../img/natours-1.png");
     }
 
     &-2 {
-      background-image: url("https://i.gyazo.com/b8b0eaa14c811610eef2a287a340b0ba.gif");
+      background-image: url("../img/photolytics-1.png");
     }
 
     &-3 {
@@ -41,7 +41,7 @@
     }
 
     &-5 {
-      background-image: url("https://i.gyazo.com/a311d8d176256c0ba2eee7ea6b082fbc.gif");
+      background-image: url("../img/vrduckhunt-1.png");
     }
 
     &-6 {
@@ -49,12 +49,28 @@
     }
 
     &-7 {
-      background-image: url("https://camo.githubusercontent.com/2a21fb02c17a433222960deb8477632faf9576ea/68747470733a2f2f6779617a6f2e636f6d2f64356232636632396138663066316136313632666465613937323039616234642e676966");
+      background-image: url("../img/playerbase-1.png");
     }
 
     &-8 {
       background-image: url("https://i.imgur.com/NJYLAI6.jpg");
     }
+  }
+
+  &:hover > &__picture-1 {
+    background-image: url("https://i.gyazo.com/2ae51d775a298600aea8c2cbadf85104.gif");
+  }
+
+  &:hover > &__picture-2 {
+    background-image: url("https://i.gyazo.com/b8b0eaa14c811610eef2a287a340b0ba.gif");
+  }
+
+  &:hover > &__picture-5 {
+    background-image: url("https://i.gyazo.com/a311d8d176256c0ba2eee7ea6b082fbc.gif");
+  }
+
+  &:hover > &__picture-7 {
+    background-image: url("https://camo.githubusercontent.com/2a21fb02c17a433222960deb8477632faf9576ea/68747470733a2f2f6779617a6f2e636f6d2f64356232636632396138663066316136313632666465613937323039616234642e676966");
   }
 
   &__heading {
