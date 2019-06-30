@@ -5,7 +5,8 @@
     $color-secondary-dark
   );
   position: relative;
-  padding: 1rem;
+  padding: .3rem;
+  min-width: 25rem;
   border-radius: 1rem;
   box-shadow: 0 0 5rem 0.1rem rgba($color-tertiary-light, 0.5);
   transition: transform 0.5s, filter 1.5s ease-out;
@@ -15,6 +16,7 @@
     animation: glowAura 2s ease-in-out infinite alternate;
     transform: scale(1.2);
     filter: brightness(100%) saturate(1);
+    z-index: $priority-h;
   }
 
   &__picture {
@@ -76,7 +78,7 @@
   &__heading {
     position: absolute;
     top: 20rem;
-    right: 2rem;
+    right: 1rem;
     &-span {
       background-image: linear-gradient(
         to right,
@@ -88,10 +90,14 @@
   }
 
   &__actions {
+    position: absolute;
+    top: 0;
+    right: .3rem;
     text-align: right;
     &-btn {
       display: inline;
-      margin: 1rem 0.3rem 0 0.3rem;
+      margin: .3rem;
+      background-color: rgba($color-tertiary-dark, .8);
       &:last-child {
         margin-right: 0;
       }
