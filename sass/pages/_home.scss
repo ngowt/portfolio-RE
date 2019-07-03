@@ -9,7 +9,14 @@
 .section-about {
   position: relative;
   padding: 25rem 5rem;
-  background-image: $color-tertiary-dark;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-tertiary, 0),
+      rgba($color-tertiary, 0.9)
+    ),
+    url("../img/background-2.svg");
+  background-size: cover;
+  background-position: center;
 }
 
 .section-projects {
