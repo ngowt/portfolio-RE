@@ -8,4 +8,9 @@
     &-white {
         background-color: rgba($color-white, .8);
     }
+
+    &-unavailable {
+        text-decoration: line-through;
+        cursor: not-allowed;
+    }
 }
