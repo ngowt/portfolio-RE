@@ -15,7 +15,9 @@
     transform: translate(-50%, -50%);
     background-image: url("../img/programmer.png");
     background-size: cover;
-    animation: moveInRight 1s ease-out, fadeIn 1s ease-out;
+    animation: moveInCenterRight $about-duration ease-out 1 $about-initial-delay
+        normal backwards,
+      fadeIn $about-duration ease-out 1 $about-initial-delay normal backwards;
   }
 
   &__picture {
@@ -29,6 +31,10 @@
     background-size: cover;
     background-position: center;
     border-radius: 50%;
+    animation: moveInCenterLeft $about-duration ease-out 1
+        ($about-initial-delay + $about-duration) normal backwards,
+      fadeIn $about-duration ease-out 1 ($about-initial-delay + $about-duration)
+        normal backwards;
   }
 
   &__details {
@@ -46,12 +52,38 @@
       width: 3rem;
       margin: 0 1rem 1rem 1rem;
       transition: all 0.2s;
+      transform: translateX(-100%);
+      animation: moveInRight-2 ($about-duration / 2) ease-out 1 normal forwards;
       &:first-child {
         margin-left: 0;
       }
 
       &:hover {
         transform: scale(1.3);
+      }
+
+      &-1 {
+        animation-delay: ($about-initial-delay + $about-duration);
+      }
+      &-2 {
+        animation-delay: ($about-initial-delay + $about-duration) +
+          ($about-duration / 2);
+      }
+      &-3 {
+        animation-delay: ($about-initial-delay + $about-duration) +
+          ($about-duration / 2) * 2;
+      }
+      &-4 {
+        animation-delay: ($about-initial-delay + $about-duration) +
+          ($about-duration / 2) * 3;
+      }
+      &-5 {
+        animation-delay: ($about-initial-delay + $about-duration) +
+          ($about-duration / 2) * 4;
+      }
+      &-6 {
+        animation-delay: ($about-initial-delay + $about-duration) +
+          ($about-duration / 2) * 5;
       }
     }
   }
