@@ -1,6 +1,5 @@
 .scene {
   border: 1px solid #CCC;
-  margin: 4rem 0;
   position: relative;
   width: 27rem;
   height: 25rem;
@@ -19,10 +18,8 @@
 
 .carousel__cell {
   position: absolute;
-  width: 25rem;
-  height: 23rem;
   left: 1rem;
-  top: 1rem;
+  top: .5rem;
   transition: transform 1s;
 }
 
