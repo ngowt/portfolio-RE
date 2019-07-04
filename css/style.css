@@ -10,6 +10,24 @@
   to {
     opacity: 1; } }
 
+@keyframes moveInCenterLeft {
+  0% {
+    transform: translate(-130%, -50%); }
+  100% {
+    transform: translate(-150%, -50%); } }
+
+@keyframes moveInCenterRight {
+  0% {
+    transform: translate(-60%, -50%); }
+  100% {
+    transform: translate(-50%, -50%); } }
+
+@keyframes moveInRight-2 {
+  0% {
+    transform: translateX(-100%); }
+  100% {
+    transform: translateX(0%); } }
+
 @keyframes moveInBottom {
   0% {
     transform: translateY(-100vh); }
@@ -125,9 +143,9 @@ body {
 
 .about {
   padding: 1rem;
-  color: #805e73; }
+  color: #484d6d; }
   .about-heading {
-    color: #484d6d; }
+    color: #805e73; }
   .about__background {
     position: absolute;
     height: 50rem;
@@ -136,7 +154,8 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     background-image: url("../img/programmer.png");
-    background-size: cover; }
+    background-size: cover;
+    animation: moveInCenterRight 0.3s ease-out 1 0.5s normal backwards, fadeIn 0.3s ease-out 1 0.5s normal backwards; }
   .about__picture {
     position: absolute;
     top: 50%;
@@ -144,10 +163,11 @@ body {
     transform: translate(-150%, -50%);
     height: 20rem;
     width: 20rem;
-    background-image: url("https://image.shutterstock.com/z/stock-photo-half-turned-side-profile-close-up-view-portrait-of-handsome-virile-masculine-attractive-confident-790169857.jpg");
+    background-image: url("../img/me.jpg");
     background-size: cover;
     background-position: center;
-    border-radius: 50%; }
+    border-radius: 50%;
+    animation: moveInCenterLeft 0.3s ease-out 1 0.8s normal backwards, fadeIn 0.3s ease-out 1 0.8s normal backwards; }
   .about__details {
     position: absolute;
     padding: 3rem;
@@ -159,11 +179,25 @@ body {
     height: 3rem;
     width: 3rem;
     margin: 0 1rem 1rem 1rem;
-    transition: all 0.2s; }
+    transition: all 0.2s;
+    transform: translateX(-100%);
+    animation: moveInRight-2 0.15s ease-out 1 normal forwards; }
     .about__skills-icon:first-child {
       margin-left: 0; }
     .about__skills-icon:hover {
       transform: scale(1.3); }
+    .about__skills-icon-1 {
+      animation-delay: 0.8s; }
+    .about__skills-icon-2 {
+      animation-delay: 0.95s; }
+    .about__skills-icon-3 {
+      animation-delay: 1.1s; }
+    .about__skills-icon-4 {
+      animation-delay: 1.25s; }
+    .about__skills-icon-5 {
+      animation-delay: 1.4s; }
+    .about__skills-icon-6 {
+      animation-delay: 1.55s; }
 
 .bg-video {
   position: absolute;
@@ -184,6 +218,10 @@ body {
 
 .btn-white {
   background-color: rgba(255, 255, 255, 0.8); }
+
+.btn-unavailable {
+  text-decoration: line-through;
+  cursor: not-allowed; }
 
 .social-media__btn {
   position: relative;
@@ -237,24 +275,24 @@ body {
     background-size: cover;
     height: 23rem;
     background-position: top;
-    transition: all 1s;
+    transition: all 1s ease-in-out;
     border-radius: 1rem; }
     .project__picture-1 {
       background-image: url("../img/natours-1.png"); }
     .project__picture-2 {
       background-image: url("../img/photolytics-1.png"); }
     .project__picture-3 {
-      background-image: url("https://i.imgur.com/s4Y0tkD.jpg"); }
+      background-image: url("../img/calculator-1.png"); }
     .project__picture-4 {
-      background-image: url("https://i.imgur.com/MNoWLCR.jpg"); }
+      background-image: url("../img/randomquotemachine-1.png"); }
     .project__picture-5 {
       background-image: url("../img/vrduckhunt-1.png"); }
     .project__picture-6 {
-      background-image: url("https://i.imgur.com/blGsfzs.jpg"); }
+      background-image: url("../img/gatchasimulator-1.jpg"); }
     .project__picture-7 {
       background-image: url("../img/playerbase-1.png"); }
     .project__picture-8 {
-      background-image: url("https://i.imgur.com/NJYLAI6.jpg"); }
+      background-image: url("../img/landingpage-1.png"); }
   .project:hover > .project__picture-1 {
     background-image: url("https://i.gyazo.com/2ae51d775a298600aea8c2cbadf85104.gif"); }
   .project:hover > .project__picture-2 {
@@ -336,7 +374,9 @@ body {
 .section-about {
   position: relative;
   padding: 25rem 5rem;
-  background-image: #C4BFC8; }
+  background-image: linear-gradient(to right bottom, rgba(239, 233, 244, 0), rgba(239, 233, 244, 0.9)), url("../img/background-2.svg");
+  background-size: cover;
+  background-position: center; }
 
 .section-projects {
   padding: 5rem 10rem;
