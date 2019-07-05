@@ -12,14 +12,14 @@ const rotateCarousel = () => {
 };
 
 const prevButton = document
-  .querySelector(".previous-button")
+  .querySelector(".carousel-controls__btn-prev")
   .addEventListener("click", () => {
     selectedIndex--;
     rotateCarousel();
   });
 
 const nextButton = document
-  .querySelector(".next-button")
+  .querySelector(".carousel-controls__btn-next")
   .addEventListener("click", () => {
     selectedIndex++;
     rotateCarousel();
