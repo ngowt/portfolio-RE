@@ -2,7 +2,7 @@
   position: relative;
   width: 27rem;
   height: 25rem;
-  margin: 8rem auto;
+  margin: 8rem auto 4rem auto;
   perspective: 100rem;
 }
 
@@ -13,28 +13,49 @@
   transform: translateZ(-34.3rem);
   transform-style: preserve-3d;
   transition: transform 1s;
-}
 
-.carousel__cell {
-  position: absolute;
-  left: 1rem;
-  top: .5rem;
-  transition: transform 1s;
-}
+  &__cell {
+    position: absolute;
+    left: 1rem;
+    top: 0.5rem;
+    transition: transform 1s;
 
-.carousel__cell:nth-child(1) { transform: rotateY(  0deg) translateZ(34.3rem); }
-.carousel__cell:nth-child(2) { transform: rotateY( 40deg) translateZ(34.3rem); }
-.carousel__cell:nth-child(3) { transform: rotateY( 80deg) translateZ(34.3rem); }
-.carousel__cell:nth-child(4) { transform: rotateY(120deg) translateZ(34.3rem); }
-.carousel__cell:nth-child(5) { transform: rotateY(160deg) translateZ(34.3rem); }
-.carousel__cell:nth-child(6) { transform: rotateY(200deg) translateZ(34.3rem); }
-.carousel__cell:nth-child(7) { transform: rotateY(240deg) translateZ(34.3rem); }
-.carousel__cell:nth-child(8) { transform: rotateY(280deg) translateZ(34.3rem); }
-.carousel__cell:nth-child(9) { transform: rotateY(320deg) translateZ(34.3rem); }
+    &:nth-child(1) {
+      transform: rotateY(0deg) translateZ(34.3rem);
+    }
+    &:nth-child(2) {
+      transform: rotateY(40deg) translateZ(34.3rem);
+    }
+    &:nth-child(3) {
+      transform: rotateY(80deg) translateZ(34.3rem);
+    }
+    &:nth-child(4) {
+      transform: rotateY(120deg) translateZ(34.3rem);
+    }
+    &:nth-child(5) {
+      transform: rotateY(160deg) translateZ(34.3rem);
+    }
+    &:nth-child(6) {
+      transform: rotateY(200deg) translateZ(34.3rem);
+    }
+    &:nth-child(7) {
+      transform: rotateY(240deg) translateZ(34.3rem);
+    }
+    &:nth-child(8) {
+      transform: rotateY(280deg) translateZ(34.3rem);
+    }
+    &:nth-child(9) {
+      transform: rotateY(320deg) translateZ(34.3rem);
+    }
+  }
 
-.carousel-options {
-  text-align: center;
-  position: relative;
-  z-index: 2;
-  background: hsla(0, 0%, 100%, 0.8);
+  &-controls {
+    text-align: center;
+    position: relative;
+
+    &__btn {
+      padding: 0 1rem;
+    }
+  }
+
 }
