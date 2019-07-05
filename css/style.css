@@ -59,6 +59,9 @@ body {
     body {
       padding: 0; } }
 
+ion-icon {
+  font-size: 64px; }
+
 body {
   font-family: "Roboto Condensed", sans-serif;
   color: #efe9f4;
@@ -216,19 +219,29 @@ body {
   color: inherit;
   cursor: pointer; }
 
+.btn-round {
+  border-radius: 50%; }
+
 .btn-white {
   background-color: rgba(255, 255, 255, 0.8); }
+
+.btn-secondary {
+  border: 0.2rem solid #efe9f4;
+  background-color: transparent;
+  transition: all .3s; }
+  .btn-secondary:hover {
+    background-color: #484d6d;
+    border: 0.2rem solid #484d6d; }
 
 .btn-unavailable {
   text-decoration: line-through;
   cursor: not-allowed; }
 
 .scene {
-  border: 1px solid #CCC;
   position: relative;
   width: 27rem;
   height: 25rem;
-  margin: 8rem auto;
+  margin: 8rem auto 4rem auto;
   perspective: 100rem; }
 
 .carousel {
@@ -238,45 +251,34 @@ body {
   transform: translateZ(-34.3rem);
   transform-style: preserve-3d;
   transition: transform 1s; }
-
-.carousel__cell {
-  position: absolute;
-  left: 1rem;
-  top: .5rem;
-  transition: transform 1s; }
-
-.carousel__cell:nth-child(1) {
-  transform: rotateY(0deg) translateZ(34.3rem); }
-
-.carousel__cell:nth-child(2) {
-  transform: rotateY(40deg) translateZ(34.3rem); }
-
-.carousel__cell:nth-child(3) {
-  transform: rotateY(80deg) translateZ(34.3rem); }
-
-.carousel__cell:nth-child(4) {
-  transform: rotateY(120deg) translateZ(34.3rem); }
-
-.carousel__cell:nth-child(5) {
-  transform: rotateY(160deg) translateZ(34.3rem); }
-
-.carousel__cell:nth-child(6) {
-  transform: rotateY(200deg) translateZ(34.3rem); }
-
-.carousel__cell:nth-child(7) {
-  transform: rotateY(240deg) translateZ(34.3rem); }
-
-.carousel__cell:nth-child(8) {
-  transform: rotateY(280deg) translateZ(34.3rem); }
-
-.carousel__cell:nth-child(9) {
-  transform: rotateY(320deg) translateZ(34.3rem); }
-
-.carousel-options {
-  text-align: center;
-  position: relative;
-  z-index: 2;
-  background: rgba(255, 255, 255, 0.8); }
+  .carousel__cell {
+    position: absolute;
+    left: 1rem;
+    top: 0.5rem;
+    transition: transform 1s; }
+    .carousel__cell:nth-child(1) {
+      transform: rotateY(0deg) translateZ(34.3rem); }
+    .carousel__cell:nth-child(2) {
+      transform: rotateY(40deg) translateZ(34.3rem); }
+    .carousel__cell:nth-child(3) {
+      transform: rotateY(80deg) translateZ(34.3rem); }
+    .carousel__cell:nth-child(4) {
+      transform: rotateY(120deg) translateZ(34.3rem); }
+    .carousel__cell:nth-child(5) {
+      transform: rotateY(160deg) translateZ(34.3rem); }
+    .carousel__cell:nth-child(6) {
+      transform: rotateY(200deg) translateZ(34.3rem); }
+    .carousel__cell:nth-child(7) {
+      transform: rotateY(240deg) translateZ(34.3rem); }
+    .carousel__cell:nth-child(8) {
+      transform: rotateY(280deg) translateZ(34.3rem); }
+    .carousel__cell:nth-child(9) {
+      transform: rotateY(320deg) translateZ(34.3rem); }
+  .carousel-controls {
+    text-align: center;
+    position: relative; }
+    .carousel-controls__btn {
+      padding: 0 1rem; }
 
 .social-media__btn {
   position: relative;
@@ -315,7 +317,7 @@ body {
 .project {
   background-image: linear-gradient(to right bottom, #696D87, #3B405A);
   position: relative;
-  padding: .3rem;
+  padding: 0.3rem;
   min-width: 25rem;
   border-radius: 1.2rem;
   box-shadow: 0 0 5rem 0.1rem rgba(241, 237, 246, 0.5);
@@ -366,11 +368,11 @@ body {
   .project__actions {
     position: absolute;
     top: 0;
-    right: .3rem;
+    right: 0.3rem;
     text-align: right; }
     .project__actions-btn {
       display: inline;
-      margin: .3rem;
+      margin: 0.3rem;
       background-color: rgba(196, 191, 200, 0.8); }
       .project__actions-btn:last-child {
         margin-right: 0; }
