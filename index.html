@@ -42,10 +42,7 @@
     </nav>
     <header id="home" class="header">
       <div class="bg-video">
-        <video class="bg-video__content" autoplay muted loop>
-          <source src="img/sparks.mp4" type="video/mp4" />
-          Your browser is not supported!
-        </video>
+        <div id="particles-js" class="bg-video__content"></div>
       </div>
       <div class="header__text-box">
         <h1 class="heading-primary">
@@ -369,10 +366,16 @@
         </div>
         <div class="carousel-controls">
           <a class="carousel-controls__btn carousel-controls__btn-prev"
-            ><ion-icon class="btn btn-secondary btn-round" name="arrow-round-back"></ion-icon
+            ><ion-icon
+              class="btn btn-secondary btn-round"
+              name="arrow-round-back"
+            ></ion-icon
           ></a>
           <a class="carousel-controls__btn carousel-controls__btn-next"
-            ><ion-icon class="btn btn-secondary btn-round" name="arrow-round-forward"></ion-icon
+            ><ion-icon
+              class="btn btn-secondary btn-round"
+              name="arrow-round-forward"
+            ></ion-icon
           ></a>
         </div>
       </section>
@@ -424,5 +427,12 @@
     <script type="text/javascript" src="js/carousel.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
     <script src="https://unpkg.com/ionicons@4.2.2/dist/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
+    <script>
+      particlesJS.load("particles-js", "assets/particles.json", () => {
+        console.log("callback - particles.js config loaded");
+      });
+    </script>
   </body>
 </html>
