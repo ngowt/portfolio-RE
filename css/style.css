@@ -202,7 +202,8 @@ body {
   left: 0;
   height: 100%;
   width: 100%;
-  opacity: 0.2; }
+  opacity: 0.8;
+  background-color: #363732; }
   .bg-video__content {
     height: 100%;
     width: 100%;
