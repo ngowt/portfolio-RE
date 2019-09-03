@@ -1,10 +1,11 @@
-.bg-video {
+.bg-particle {
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
-  opacity: 0.2;
+  opacity: 0.8;
+  background-color: #363732;
 
   &__content {
     height: 100%;
