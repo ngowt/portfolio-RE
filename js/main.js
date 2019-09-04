@@ -4,10 +4,6 @@ window.onload = () => {
     console.log("callback - particles.js config loaded");
   });
 
-  particlesJS.load("particles2-js", "assets/particles.json", () => {
-    console.log("callback - particles.js config loaded");
-  });
-
   let currentRole = 0;
   const changeJob = () => {
     const roles = [
