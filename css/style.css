@@ -48,7 +48,7 @@
 body {
   box-sizing: border-box;
   padding: 3rem 9rem 3rem 3rem;
-  background-color: #efe9f4; }
+  background-color: #F7F4EA; }
   @media only screen and (max-width: 56.25em) {
     body {
       padding: 0; } }
@@ -58,13 +58,13 @@ ion-icon {
 
 body {
   font-family: "Roboto Condensed", sans-serif;
-  color: #efe9f4;
+  color: #F7F4EA;
   font-weight: 400; }
 
 .navigation {
   text-transform: uppercase;
   font-size: 1.4rem;
-  font-weight: 300; }
+  font-weight: 400; }
 
 .heading-primary--main {
   text-transform: uppercase;
@@ -140,9 +140,9 @@ body {
 
 .about {
   padding: 1rem;
-  color: #484d6d; }
+  color: #5A5B57; }
   .about-heading {
-    color: #805e73; }
+    color: #5A5B57; }
   .about__background {
     position: absolute;
     height: 50rem;
@@ -221,12 +221,12 @@ body {
   background-color: rgba(255, 255, 255, 0.8); }
 
 .btn-secondary {
-  border: 0.2rem solid #efe9f4;
+  border: 0.2rem solid #F7F4EA;
   background-color: transparent;
   transition: all .3s; }
   .btn-secondary:hover {
-    background-color: #484d6d;
-    border: 0.2rem solid #484d6d; }
+    background-color: #4DE2A2;
+    border: 0.2rem solid #4DE2A2; }
 
 .btn-unavailable {
   text-decoration: line-through;
@@ -292,7 +292,7 @@ body {
     outline: none; }
   .social-media__btn:hover {
     transform: scale(1.3);
-    box-shadow: 0rem 0.5rem 1rem #c4bfc8; }
+    box-shadow: 0rem 0.5rem 1rem #cbc8c0; }
   .social-media__btn-1 {
     animation-delay: .089s; }
   .social-media__btn-2 {
@@ -310,7 +310,7 @@ body {
   width: 50%; }
 
 .project {
-  background-image: linear-gradient(to right bottom, #696D87, #3B405A);
+  background-image: linear-gradient(to right bottom, #7DE9BB, #46CE94);
   position: relative;
   padding: 0.3rem;
   min-width: 25rem;
@@ -327,7 +327,7 @@ body {
     width: 100%;
     height: 100%;
     opacity: 0;
-    box-shadow: 0 0 1rem 0 #C4BFC8;
+    box-shadow: 0 0 1rem 0 #CBC8C0;
     transition: all 1s; }
   .project:hover {
     filter: brightness(100%) saturate(1);
@@ -369,7 +369,7 @@ body {
     top: 20rem;
     right: 1rem; }
     .project__heading-span {
-      background-image: linear-gradient(to right, rgba(151, 123, 140, 0.95), rgba(105, 77, 95, 0.95));
+      background-image: linear-gradient(to right, rgba(127, 127, 124, 0.95), rgba(54, 55, 50, 0.95));
       padding: 0.5rem 0.8rem; }
   .project__actions {
     position: absolute;
@@ -379,7 +379,7 @@ body {
     .project__actions-btn {
       display: inline;
       margin: 0.3rem;
-      background-color: rgba(196, 191, 200, 0.8); }
+      background-color: rgba(203, 200, 192, 0.8); }
       .project__actions-btn:last-child {
         margin-right: 0; }
     .project__actions__logo {
@@ -388,7 +388,7 @@ body {
 .header {
   position: relative;
   height: 95vh;
-  background-image: linear-gradient(to right bottom, #977B8C, #694D5F); }
+  background-image: linear-gradient(to right bottom, #7F7F7C, #363732); }
   .header__text-box {
     position: absolute;
     top: 40%;
@@ -398,7 +398,7 @@ body {
 
 .heading-primary--main {
   display: block;
-  border-bottom: 0.1rem solid #efe9f4; }
+  border-bottom: 0.1rem solid #4DE2A2; }
 
 .heading-primary--sub {
   display: block;
@@ -421,9 +421,9 @@ body {
     padding: 0.5rem 0rem 0.5rem 1rem;
     list-style: none;
     transition: all 0.5s;
-    color: #484d6d; }
+    color: #5A5B57; }
     .navigation__item-span {
-      border-bottom: 0.1rem solid rgba(128, 94, 115, 0.9); }
+      border-bottom: 0.1rem solid rgba(77, 226, 162, 0.9); }
     .navigation__item:hover {
       transform: translateX(-0.2rem); }
 
@@ -437,10 +437,10 @@ body {
 .section-about {
   position: relative;
   padding: 25rem 5rem;
-  background-image: linear-gradient(to right bottom, rgba(239, 233, 244, 0), rgba(239, 233, 244, 0.9)), url("../img/background-2.svg");
+  background-image: linear-gradient(to right bottom, rgba(247, 244, 234, 0), rgba(247, 244, 234, 0.9)), url("../img/background-2.svg");
   background-size: cover;
   background-position: center; }
 
 .section-projects {
   padding: 5rem 10rem;
-  background-image: linear-gradient(to right bottom, #977B8C, #694D5F); }
+  background-image: linear-gradient(to right bottom, #7F7F7C, #363732); }
