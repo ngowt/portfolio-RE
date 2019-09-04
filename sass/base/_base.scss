@@ -12,7 +12,7 @@ body {
     @include respond(tab-port) { // width < 900?
         padding: 0;
     }
-    background-color: $color-tertiary;
+    background-color: $color-secondary;
 }
 
 ion-icon {

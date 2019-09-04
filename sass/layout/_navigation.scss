@@ -9,12 +9,12 @@
 
   &__item {
     &-span {
-      border-bottom: 0.1rem solid rgba($color-primary, 0.9);
+      border-bottom: 0.1rem solid rgba($color-tertiary, 0.9);
     }
     padding: 0.5rem 0rem 0.5rem 1rem;
     list-style: none;
     transition: all 0.5s;
-    color: $color-secondary;
+    color: $color-primary;
     &:hover {
       transform: translateX(-0.2rem);
     }
