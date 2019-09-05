@@ -1,7 +1,11 @@
 window.onload = () => {
   /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-  particlesJS.load("particles-js", "assets/particles.json", () => {
-    console.log("callback - particles.js config loaded");
+  particlesJS.load("header__particles", "assets/particles.json", () => {
+    console.log("Header particles loaded");
+  });
+
+  particlesJS.load("projects__particle", "assets/particles.json", () => {
+    console.log("Projects particle loaded");
   });
 
   let currentRole = 0;
