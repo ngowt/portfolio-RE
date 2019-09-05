@@ -202,8 +202,7 @@ body {
   left: 0;
   height: 100%;
   width: 100%;
-  opacity: 0.8;
-  background-color: #363732; }
+  opacity: 0.8; }
   .bg-particle__content {
     height: 100%;
     width: 100%;
@@ -388,7 +387,7 @@ body {
 .header {
   position: relative;
   height: 95vh;
-  background-image: linear-gradient(to right bottom, #7F7F7C, #363732); }
+  background-image: linear-gradient(to bottom, #363732, #5A5B57); }
   .header__text-box {
     position: absolute;
     top: 40%;
@@ -444,4 +443,4 @@ body {
 .section-projects {
   position: relative;
   padding: 5rem 10rem;
-  background-image: linear-gradient(to right bottom, #7F7F7C, #363732); }
+  background-image: linear-gradient(to right bottom, #363732, #5A5B57); }
