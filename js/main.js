@@ -8,6 +8,8 @@ window.onload = () => {
     console.log("Projects particle loaded");
   });
 
+  // particlesJS("projects__particle")
+
   let currentRole = 0;
   const changeJob = () => {
     const roles = [
