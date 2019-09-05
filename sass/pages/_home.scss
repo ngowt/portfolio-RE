@@ -23,9 +23,9 @@
   position: relative;
   padding: 5rem 10rem;
   background-image: linear-gradient(
-    to right bottom,
-    $color-primary-light,
-    $color-primary-dark
+    to bottom,
+    $color-primary-dark,
+    $color-primary
   );
 
   // @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
