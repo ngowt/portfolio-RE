@@ -47,7 +47,7 @@
 
 body {
   box-sizing: border-box;
-  padding: 3rem 9rem 3rem 3rem;
+  padding-right: 9rem;
   background-color: #F7F4EA; }
   @media only screen and (max-width: 56.25em) {
     body {
@@ -386,7 +386,7 @@ body {
 
 .header {
   position: relative;
-  height: 95vh;
+  height: 100vh;
   background-image: linear-gradient(to bottom, #363732, #5A5B57); }
   .header__text-box {
     position: absolute;
@@ -442,5 +442,6 @@ body {
 
 .section-projects {
   position: relative;
+  height: 100vh;
   padding: 5rem 10rem;
   background-image: linear-gradient(to bottom, #363732, #5A5B57); }
