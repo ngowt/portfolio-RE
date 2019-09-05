@@ -8,7 +8,7 @@
 
 body {
     box-sizing: border-box;
-    padding: 3rem 9rem 3rem 3rem;
+    padding-right: 9rem;
     @include respond(tab-port) { // width < 900?
         padding: 0;
     }
