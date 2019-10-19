@@ -71,6 +71,10 @@
     &-8 {
       background-image: url("../img/landingpage-1.png");
     }
+
+    &-9 {
+      background-image: url("../img/trilo-1.png");
+    }
   }
 
   &:hover > &__picture-1 {
@@ -87,6 +91,10 @@
 
   &:hover > &__picture-7 {
     background-image: url("https://camo.githubusercontent.com/2a21fb02c17a433222960deb8477632faf9576ea/68747470733a2f2f6779617a6f2e636f6d2f64356232636632396138663066316136313632666465613937323039616234642e676966");
+  }
+
+  &:hover > &__picture-9 {
+    background-image: url("https://gyazo.com/ea499f7411f1a143316d429766dd4f77.gif");
   }
 
   &__heading {
