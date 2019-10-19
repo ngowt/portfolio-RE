@@ -355,6 +355,8 @@ body {
       background-image: url("../img/playerbase-1.png"); }
     .project__picture-8 {
       background-image: url("../img/landingpage-1.png"); }
+    .project__picture-9 {
+      background-image: url("../img/trilo-1.png"); }
   .project:hover > .project__picture-1 {
     background-image: url("https://i.gyazo.com/2ae51d775a298600aea8c2cbadf85104.gif"); }
   .project:hover > .project__picture-2 {
@@ -363,6 +365,8 @@ body {
     background-image: url("https://i.gyazo.com/a311d8d176256c0ba2eee7ea6b082fbc.gif"); }
   .project:hover > .project__picture-7 {
     background-image: url("https://camo.githubusercontent.com/2a21fb02c17a433222960deb8477632faf9576ea/68747470733a2f2f6779617a6f2e636f6d2f64356232636632396138663066316136313632666465613937323039616234642e676966"); }
+  .project:hover > .project__picture-9 {
+    background-image: url("https://gyazo.com/ea499f7411f1a143316d429766dd4f77.gif"); }
   .project__heading {
     position: absolute;
     top: 20rem;
